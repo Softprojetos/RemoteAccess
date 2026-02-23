@@ -6,11 +6,11 @@ namespace RemoteAccess.Desktop.Forms;
 
 public class ViewerForm : Form
 {
-    private readonly ConnectionService _connection;
-    private readonly PictureBox _screen;
-    private readonly Label _lblStatus;
-    private readonly Panel _toolbar;
-    private readonly Button _btnQuality;
+    private ConnectionService _connection = null!;
+    private PictureBox _screen = null!;
+    private Label _lblStatus = null!;
+    private Panel _toolbar = null!;
+    private Button _btnQuality = null!;
     private int _remoteWidth = 1920;
     private int _remoteHeight = 1080;
     private int _qualityLevel = 1; // 0=low, 1=med, 2=high
